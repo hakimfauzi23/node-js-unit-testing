@@ -8,9 +8,16 @@
     "test": "jest"
   },
   "jest": {
+    "verbose": true,
+    "collectCoverage": false,
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
-    }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!vendor/**/*.{js,jsx}"
+    ],
+    "maxConcurrency": 4
   },
   "author": "hakimfauzi23",
   "license": "ISC",
